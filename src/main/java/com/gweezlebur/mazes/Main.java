@@ -3,6 +3,7 @@ package com.gweezlebur.mazes;
 import com.gweezlebur.mazes.algo.BinaryTree;
 import com.gweezlebur.mazes.algo.BinaryTreeMod;
 import com.gweezlebur.mazes.algo.Sidewinder;
+import com.gweezlebur.mazes.algo.SidewinderMod;
 import com.gweezlebur.mazes.grid.Grid;
 
 public class Main {
@@ -30,6 +31,14 @@ public class Main {
             case "sidewinder":
                 System.out.println("Using sidewinder");
                 Sidewinder.on(grid);
+                break;
+            case "binarytreemod":
+                System.out.println("Using binarytreemod");
+                BinaryTreeMod.on(grid);
+                break;
+            case "sidewindermod":
+                System.out.println("Using sidewindermod");
+                SidewinderMod.on(grid);
                 break;
             default:
                 System.out.println("Using binarytree (default)");
