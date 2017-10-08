@@ -24,7 +24,7 @@ public class Grid {
         this(size, size);
     }
 
-    public Cell getCell(int x, int y) {
+    private Cell getCell(int x, int y) {
         if (x < 0 || y < 0 || x >= rows || y >= cols) {
             return null;
         }

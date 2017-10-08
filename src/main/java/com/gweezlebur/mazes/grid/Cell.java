@@ -29,7 +29,7 @@ public class Cell {
         return link(c, true);
     }
 
-    public Cell link(Cell c, boolean bidirectional) {
+    private Cell link(Cell c, boolean bidirectional) {
         links.put(c,true);
         if (bidirectional) {
             c.link(this, false);
@@ -41,7 +41,7 @@ public class Cell {
         return unlink(c, true);
     }
 
-    public Cell unlink(Cell c, boolean bidirectional) {
+    private Cell unlink(Cell c, boolean bidirectional) {
         links.remove(c);
         if (bidirectional) {
             c.unlink(this, false);
